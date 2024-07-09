@@ -1,0 +1,34 @@
+workspace = { members = ["benchmarks"] }
+
+[package]
+name = "grunt"
+version = "0.3.0"
+edition = "2021"
+
+[[bin]]
+name = "grunt"
+path = "src/main.rs"
+
+[lib]
+name = "grunt"
+path = "src/lib.rs"
+
+[examples]
+inner_lift_cross = "./examples/inner_lift_cross.rs"
+outer_lift_cross = "./examples/outer_lift_cross.rs"
+inner_descent_cross = "./examples/inner_descent_cross.rs"
+outer_descent_cross = "./examples/outer_descent_cross.rs"
+half_lift = "./examples/half_lift.rs"
+half_lift_at_an_angle = "./examples/half_lift_at_an_angle.rs"
+
+[dependencies]
+env_logger = "0.11.0"
+log = "0.4.20"
+numtoa = "0.2.4"
+rand = "0.8.5"
+serde = { version="1.0.197", features=["derive"]}
+serde_json = "1.0.114"
+
+[profile.release-debug]
+inherits = "release"
+debug = true

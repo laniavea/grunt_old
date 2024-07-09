@@ -1,0 +1,9 @@
+test name, v0.3, v0.4, master
+Random border benchmark, 33.02, -, 31.15
+Model generation benchmark (Full model), 22.96, -, 9.00
+Model generation benchmark (Mask only), 2.72, -, 2.20
+Model generation benchmark (Model only), 21.54, -, 7.79
+Export Borders&Axis&Params (Num), 8.30, -, 7.82
+Export Borders&Axis&Params (Scale), 8.30, -, 7.83
+Export Model&Mask (Model), 9.96, -, 9.50
+Export Model&Mask (Mask), 7.56, -, 7.18
